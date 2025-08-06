@@ -1,0 +1,147 @@
+/* General Reset and Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+  display: flex;
+  height: 100vh;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: white;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar .logo {
+  font-weight: bold;
+  color: #d80000;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #444;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.sidebar nav a:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar .notification-badge {
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 12px;
+  margin-left: auto;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+/* Top Nav */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.top-nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.top-nav .active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Post Card */
+.post-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-header h3 {
+  margin-bottom: 4px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+
+.post-comment {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.post-comment img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.comment-box {
+  margin-top: 1rem;
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.comment-box input {
+  flex: 1;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
